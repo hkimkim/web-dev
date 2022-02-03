@@ -1,6 +1,6 @@
 # CS5610 Web Development SPR 2022
 
-Heekyung Kim
+Heekyung Kim  
 https://tender-joliot-d74ed1.netlify.app/
 
 ## Assignments

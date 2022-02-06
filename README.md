@@ -9,3 +9,4 @@ https://tender-joliot-d74ed1.netlify.app/
 | week2  | a2  | Feb 8th, 2022  |    
 |   |   |   |    
 
+Assignment 2

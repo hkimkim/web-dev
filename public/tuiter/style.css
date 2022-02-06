@@ -8,6 +8,7 @@
 
 .wd-left-margin {
     margin-left: 16px;
+    margin-right: 16px;
 }
 
 .wd-search-bar-background {
@@ -37,13 +38,13 @@
     float: right;
 }
 
-.grid-row {
-    clear: both;
-}
-
-.grid-col {
+.wd-tab-float {
     width: 16.6%;
     float: left;
+}
+
+.float-done {
+    clear: both;
 }
 
 .wd-tab-font-style {
@@ -52,7 +53,7 @@
 }
 
 .wd-tab-font-padding {
-    margin: 16px;
+    /* margin: 16px; */
     padding: 16px;
 }
 
@@ -63,4 +64,25 @@
 
 .wd-tab-border-highlight {
     border-bottom: solid 5px rgb(29, 161, 242);
+}
+
+.wd-suggested-post {
+    position: relative;
+    font-size: 13px;
+    /* padding-left: 30px; */
+    border-bottom: solid 0.1px rgba(110, 118, 125, 0.5);
+
+}
+
+.wd-post-topic{
+    color:rgb(110, 118, 125);
+}
+
+.wd-post-title{
+    color:white;
+    font-weight: bold;
+}
+
+.wd-post-number-of-tweets{
+    color:rgb(110, 118, 125);
 }

@@ -1,0 +1,38 @@
+.wd-explore-body-background {
+    background-color: black;
+}
+
+.wd-left-margin {
+    margin-left: 16px;
+}
+
+.wd-search-bar-background {
+    background-color: rgba(66, 61, 61, 0.527);
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 50px;
+}
+
+.wd-search-bar-font-color {
+    color: white;
+}
+
+.wd-border-color {
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-search-bar-padding {
+    padding: 10px 20px;
+    width: 80%;
+}
+
+.wd-explore-setting-float {
+    margin-right: 12px;
+    margin-top: 10px;
+    float: right;
+}
+/* 
+.icon {
+    position: relative;
+} */

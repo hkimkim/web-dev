@@ -50,16 +50,17 @@
 .wd-tab-font-style {
     color: rgb(110, 118, 125);
     font-size: 15px;
+    text-decoration: none;
 }
 
 .wd-tab-font-padding {
-    /* margin: 16px; */
     padding: 16px;
 }
 
 .wd-tab-font-style-highlight {
     color: rgb(29, 161, 242);
     font-size: 15px;
+    text-decoration: none;
 }
 
 .wd-tab-border-highlight {
@@ -67,14 +68,24 @@
 }
 
 .wd-suggested-post {
-    position: relative;
     font-size: 13px;
-    /* padding-left: 30px; */
     border-bottom: solid 0.1px rgba(110, 118, 125, 0.5);
-
 }
 
-.wd-post-topic{
+.wd-suggested-post-d {
+    position: relative;
+    font-size: 13px;
+    width: auto;
+    height: 120px;
+    border-bottom: solid 0.1px rgba(110, 118, 125, 0.5);
+}
+
+.wd-post-topic {
+    color:rgb(110, 118, 125);
+}
+
+
+.wd-post-date {
     color:rgb(110, 118, 125);
 }
 
@@ -83,6 +94,33 @@
     font-weight: bold;
 }
 
+.wd-post-img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border-color: white;
+    float: right;
+    top: 10px;
+}
+
 .wd-post-number-of-tweets{
     color:rgb(110, 118, 125);
+}
+
+.wd-post-author {
+    color:white;
+}
+
+.grid-row {
+    clear: both;
+}
+
+.grid-col-third-page {
+    width: 33%;
+    float: left;
+}
+.grid-col-two-thirds-page {
+    width: 67%;
+    float: left;
 }

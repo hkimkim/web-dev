@@ -54,7 +54,8 @@
 }
 
 .wd-tab-font-padding {
-    padding: 16px;
+    margin: 0px 16px;
+    padding: 16px 0px;
 }
 
 .wd-tab-font-style-highlight {

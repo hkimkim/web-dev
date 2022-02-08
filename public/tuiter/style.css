@@ -53,8 +53,7 @@
     text-decoration: none;
 }
 
-.wd-tab-font-padding {
-    margin: 0px 16px;
+.wd-tab-padding {
     padding: 16px 0px;
 }
 
@@ -64,21 +63,26 @@
     text-decoration: none;
 }
 
+.wd-tab {
+    margin: 0px 15px;
+}
+
 .wd-tab-border-highlight {
     border-bottom: solid 5px rgb(29, 161, 242);
 }
 
-.wd-suggested-post {
+.wd-suggested-post-font {
     font-size: 13px;
+}
+
+.wd-suggested-post-border {
     border-bottom: solid 0.1px rgba(110, 118, 125, 0.5);
 }
 
 .wd-suggested-post-d {
     position: relative;
-    font-size: 13px;
     width: auto;
     height: 120px;
-    border-bottom: solid 0.1px rgba(110, 118, 125, 0.5);
 }
 
 .wd-post-topic {

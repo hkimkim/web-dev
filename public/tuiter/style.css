@@ -1,4 +1,4 @@
-.wd-explore-body-background {
+.wd-body-background {
     background-color: black;
 }
 
@@ -128,4 +128,86 @@
 .grid-col-two-thirds-page {
     width: 67%;
     float: left;
+}
+
+.wd-bookmark-title-margin {
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+
+.wd-bookmark-font-style {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.wd-handle-font-style {
+    font-size: 13px;
+    color: lightgray;
+}
+
+.wd-handle-margin {
+        margin-left: 16px;
+        margin-top: -18px;
+        padding-bottom: 12px;
+}
+
+.wd-handle-border {
+    border-bottom: solid lightgray 1px;
+}
+
+.grid-col-ninth-page {
+    width: 10%;
+    float: left;
+}
+.grid-col-eight-ninth-page {
+    width: 90%;
+    float: left;
+}
+
+.wd-bookmark-post {
+    /* height: 120px; */
+    margin-top: 12px;
+}
+
+.wd-bookmark-post-profile-picture {
+    position: absolute;
+    margin-left: 32px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+}
+
+.wd-bookmark-post-handle-font-style {
+    color: lightgray;
+    font-size: 15px;
+}
+
+.wd-bookmark-post-date-font-style {
+    color: lightgray;
+    font-size: 15px;
+}
+
+.wd-bookmark-post-author-font-style {
+    color: white;
+    font-size: 15px;
+}
+
+.wd-bookmark-post-author-margin {
+    margin-top: 12px;
+    margin-left: 92px;
+}
+
+.wd-bookmark-post-content-dimension {
+    margin-left: 92px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+    max-width: 506px;
+
+}
+
+.wd-bookmark-post-content-font-style {
+    color:white;
+    font-size: 15px;
 }

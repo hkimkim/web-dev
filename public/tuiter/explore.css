@@ -15,12 +15,18 @@
     font-weight: bold;
 }
 
+.follow-top-margin {
+    margin-top: 6%;
+}
+
 .wd-suggested-post-border {
     border-bottom: solid 0.1px rgba(185, 195, 204, 0.5);
 }
 
 .profile-pic {
     border-radius: 50px;
+    width: fit-content;
+    height: fit-content;
 }
 
 .carousel-caption {

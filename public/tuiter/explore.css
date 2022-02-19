@@ -7,11 +7,7 @@
     border-right: transparent;
 }
 
-.fg-style {
-    font-weight: bold;;
-}
-
-.follow-title {
+.fg-style-bold {
     font-weight: bold;
 }
 
@@ -23,15 +19,26 @@
     border-bottom: solid 0.1px rgba(185, 195, 204, 0.5);
 }
 
+.profile-pic {
+    border-radius: 50px;
+}
+
 .carousel-caption {
     position: absolute;
     right: 15%;
     bottom: -1rem;
     left: 1%;
     padding-top: 1.25rem;
-    /* padding-bottom: 1.25rem; */
     color: #fff;
     text-align: left;
     font-size: xx-large;
     font-weight: bold;
+}
+
+.fg-color-gray {
+    color:gray;
+}
+
+.hide {
+    display: none;
 }

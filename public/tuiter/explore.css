@@ -9,10 +9,10 @@
 .fg-style-bold {
     font-weight: bold;
 }
-
+/* 
 .follow-top-margin {
     margin-top: 6%;
-}
+} */
 
 .wd-suggested-post-border {
     border-bottom: solid 0.1px rgba(185, 195, 204, 0.5);
@@ -23,15 +23,15 @@
     width: 70%;
 }
 
-.follow-btn-margin {
+/* .follow-btn-margin {
     margin-top: 10%;
-}
+} */
 
 .carousel-caption {
     position: absolute;
     right: 15%;
-    bottom: -1rem;
-    left: 1%;
+    /* bottom: -1rem; */
+    /* left: 1%; */
     padding-top: 1.25rem;
     color: #fff;
     text-align: left;

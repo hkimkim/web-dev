@@ -1,0 +1,20 @@
+.wd-rounded-corners-all-around {
+    border-radius: 50px;
+}
+
+.input-group-text {
+    background-color: transparent;
+    border-right: transparent;
+}
+
+.fg-style {
+    font-weight: bold;;
+}
+
+.follow-title {
+    font-weight: bold;
+}
+
+.wd-suggested-post-border {
+    border-bottom: solid 0.1px rgba(185, 195, 204, 0.5);
+}

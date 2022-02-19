@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="navigation col-xl-2">
+            <div class="navigation col-xl-2 mt-2">
                 
             <ul class="list-group">
                 <li class="list-group-item">
@@ -21,54 +21,110 @@
                 </li>
 
                 <li class="list-group-item">
-                    <i class="fa fa-home"></i> Home
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="col-10">
+                            Home
+                        </div>
+                    </div>
                 </li>
 
                 <li class="list-group-item active">
-                    <i class="fa fa-hashtag"></i> Explore
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa fa-hashtag"></i>
+                        </div>
+                        <div class="col-10">
+                            Explore
+                        </div>
+                    </div>
                 </li>
 
                 <li class="list-group-item">
-                    <i class="fa fa-bell"></i> Notifications
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="col-10">
+                            Notifications
+                        </div>
+                    </div>
                 </li>
 
                 <li class="list-group-item">
-                    <i class="fa fa-envelope"></i> Messages
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="col-10">
+                            Messages
+                        </div>
+                    </div>
                 </li>
 
                 <li class="list-group-item ">
-                    <i class="fa fa-bookmark"></i> Bookmarks
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa fa-bookmark"></i>
+                        </div>
+                        <div class="col-10">
+                            Bookmarks
+                        </div>
+                    </div>
                 </li>
 
                 <li class="list-group-item ">
-                    <i class="fas fa-list"></i> Lists
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fas fa-list"></i>
+                        </div>
+                        <div class="col-10">
+                            Lists
+                        </div>
+                    </div>
                 </li>
 
                 <li class="list-group-item ">
-                    <i class="fa fa-user"></i> Profile
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="col-10">
+                            Profile
+                        </div>
+                    </div>
                 </li>
 
                 <li class="list-group-item ">
-                    <span class="fa-stack fa-1x">
-                        <i class="fas fa-circle fa-stack-1x"></i>
-                       <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
-                   </span>              
-                    More  
+                    <div class="row">
+                        <div class="col-1">
+                            <span class="fa-stack fa-1x">
+                                <i class="fas fa-circle fa-stack-1x"></i>
+                               <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                           </span>    
+                        </div>
+
+                        <div class="col-10">
+                            More
+                        </div>
+                    </div>
                 </li>
-                <button type="submit" class="rounded-pill btn btn-primary">Tuit</button>
+                <button type="submit" class="rounded-pill btn btn-primary mt-2">Tuit</button>
 
             </ul>
 
 
             </div>
     
-            <div class="content col-xl-6">
+            <div class="content col-xl-6 mt-2 mb-4">
 
                 <div class="row">
                     <div class="col-11">
                         <div class="input-group">
-                            <span class="input-group-text bg-transparent wd-rounded-corners-all-around"><i class="fa fa-search"></i></span>
-                            <input type="text" class="form-control wd-rounded-corners-all-around" placeholder="Search Tuiter">
+                            <span class="input-group-text bg-transparent wd-rounded-corners-all-around right-corner-invisible"><i class="fa fa-search"></i></span>
+                            <input type="text" class="form-control wd-rounded-corners-all-around left-corner-invisible" placeholder="Search Tuiter">
                         </div>
                     </div>
 
@@ -78,7 +134,7 @@
                 </div>
 
 
-                <ul class="nav nav-tabs">
+                <ul class="nav nav-tabs mt-2">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">For You</a>
                     </li>
@@ -96,7 +152,7 @@
                     </li>
                 </ul>
 
-                <div class="card">
+                <div class="card mt-2">
                     <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" class="card-img-top" alt="...">
                     <span class="carousel-caption">SpaceX's Starship </span>
                 </div>
@@ -126,7 +182,7 @@
                         <div class="row">
                             <div class="col-xl-9">
                                 <p>
-                                    <span class="fg-style-bold">JavaScript<i class="fa fa-check-circle"></span></i></span>
+                                    <span class="fg-style-bold">JavaScript <i class="fa fa-check-circle"></span></i></span>
                                     <span class="fg-color-gray"> - 2h</span></br>
                                     <span class="fg-style-bold">JavaScript is a programming language that can run on browsers as well as desktops</span> </br>
                                     <span class="fg-color-gray">123K Tweets</span>
@@ -181,7 +237,7 @@
                     </li>
             </div>
     
-            <div class="follow col-xl-4">
+            <div class="follow col-xl-4 mt-2">
                 <ul class="list-group">
                     <li class="list-group-item fg-style-bold">
                         Who to Follow
@@ -200,7 +256,7 @@
                                 
                             </div>
                             <div class="col-xl-3 pull-right">
-                                <button type="submit" class="rounded-pill btn btn-primary">Follow</button>
+                                <button type="submit" class="rounded-pill btn btn-primary follow-btn-margin">Follow</button>
                             </div>
                         </div>
                         
@@ -219,7 +275,7 @@
                                 
                             </div>
                             <div class="col-3 pull-right">
-                                <button type="submit" class="rounded-pill btn btn-primary">Follow</button>
+                                <button type="submit" class="rounded-pill btn btn-primary follow-btn-margin">Follow</button>
                             </div>
                         </div>
                     </li>
@@ -237,7 +293,7 @@
                                 
                             </div>
                             <div class="col-3 pull-right">
-                                <button type="submit" class="rounded-pill btn btn-primary">Follow</button>
+                                <button type="submit" class="rounded-pill btn btn-primary follow-btn-margin">Follow</button>
                             </div>
                         </div>
                      </li>
@@ -255,7 +311,7 @@
                                 </p>
                             </div>
                             <div class="col-3 pull-right">
-                                <button type="submit" class="rounded-pill btn btn-primary">Follow</button>
+                                <button type="submit" class="rounded-pill btn btn-primary follow-btn-margin">Follow</button>
                             </div>
                         </div>
                     </li>
@@ -274,7 +330,7 @@
                                 
                             </div>
                             <div class="col-3 pull-right">
-                                <button type="submit" class="rounded-pill btn btn-primary">Follow</button>
+                                <button type="submit" class="rounded-pill btn btn-primary follow-btn-margin">Follow</button>
                             </div>
                         </div>
                     </li>

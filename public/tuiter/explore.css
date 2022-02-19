@@ -4,7 +4,6 @@
 
 .input-group-text {
     background-color: transparent;
-    border-right: transparent;
 }
 
 .fg-style-bold {
@@ -21,6 +20,11 @@
 
 .profile-pic {
     border-radius: 50px;
+    width: 70%;
+}
+
+.follow-btn-margin {
+    margin-top: 10%;
 }
 
 .carousel-caption {
@@ -41,4 +45,9 @@
 
 .hide {
     display: none;
+}
+
+.fa-stack {
+    margin-left: -14px;
+    margin-top: -3px;
 }

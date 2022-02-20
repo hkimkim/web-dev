@@ -1,3 +1,7 @@
+.tuiter-challenge-background {
+    background-color: rgba(15, 15, 15, 0.952);
+}
+
 .wd-rounded-corners-all-around {
     border-radius: 50px;
 }
@@ -43,6 +47,14 @@
     color:gray;
 }
 
+.fg-light-gray {
+    color: rgba(255, 255, 255, 0.829)
+}
+
+.fg-white {
+    color: rgb(255, 255, 255)
+}
+
 .hide {
     display: none;
 }
@@ -51,3 +63,46 @@
     margin-left: -14px;
     margin-top: -3px;
 }
+
+
+.btn-custom {
+    background-color: rgba(255, 255, 255, 0.952);
+    color: black;
+    font-weight: bold;
+}
+
+.list-group-navigation .list-group-item {
+    background-color: rgba(15, 15, 15, 0.952);
+    /* border-top: 1px solid #0091b5;
+    border-left-color: #fff;
+    border-right-color: #fff; */
+    color:rgba(255, 255, 255, 0.829);
+  }
+
+  .list-group-content .list-group-item {
+    background-color: rgba(15, 15, 15, 0.952);
+    border-top: 0.5px solid rgba(211, 211, 211, 0.219);
+    border-left-color: rgba(211, 211, 211, 0.219);
+    border-right-color: rgba(211, 211, 211, 0.219);
+    color:white;
+  }
+
+   .list-group-follow-suggestion .list-group-item {
+    background-color: rgba(15, 15, 15, 0.952);
+    /* border-top: 0.5px solid rgba(211, 211, 211, 0.219);
+    border-left-color: rgba(211, 211, 211, 0.219);
+    border-right-color: rgba(211, 211, 211, 0.219); */
+    color:white;
+  }
+
+  .form-control-search {
+    background-color: rgba(48, 47, 47, 0.5);
+    border-color: transparent;
+  }
+
+  .bg-light-gray {
+    background-color: rgba(48, 47, 47, 0.5);
+    color: rgba(211, 211, 211, 0.219);
+    border-color: transparent;
+  }
+

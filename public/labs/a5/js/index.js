@@ -52,3 +52,21 @@ console.log(true3);
 console.log(true4);
 console.log(true5);
 console.log(false3);
+
+// If Else
+console.log('If else');
+if(true1) {
+    console.log(true);
+}
+
+if(!false1) {
+    console.log('!false1');
+} else {
+    console.log('false1');
+}
+
+// Ternary Conditional Operator
+console.log("Ternary Conditional Operator")
+const loggedIn = true;
+const greeting = loggedIn ? "Welcome!" : "Please Login";
+console.log(greeting);

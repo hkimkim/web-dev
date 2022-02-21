@@ -192,3 +192,11 @@ console.log(greeting1);
 const loggedIn1 = false;
 const greeting2 = `Logged in: ${loggedIn ? "Yes" : "No"}`;
 console.log(greeting2);
+
+
+// Jquery
+const init = () => {
+    console.log("Hello world from jQuery");
+}
+
+$(init);

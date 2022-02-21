@@ -14,5 +14,26 @@
     </script> -->
 
     <script src="index.js"></script>
+    
+    <h2>Writing to the DOM</h2>
+    <script>
+        document.write("Welcome to JavaScript!")
+    </script>
+
+    <h2>Calculating an HTML string</h2>
+    <script>
+        const renderTodos = (todos) => `
+            <ul> 
+                ${todos.map(todo => 
+                    `<li>
+                        ${todo}
+                    </li>`).join('')
+                }
+            </ul>
+        `
+        const todos = ['Pickup Kids', 'Feed dogs']
+        let html = renderTodos(todos);
+        document.write(html);
+    </script>
 </body>
 </html>

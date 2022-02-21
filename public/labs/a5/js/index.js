@@ -197,6 +197,25 @@ console.log(greeting2);
 // Jquery
 const init = () => {
     console.log("Hello world from jQuery");
+    const bindById = $('#bind-by-id');
+    const bindByClass = $('.bind-by-class');
+    console.log('Binding to DOM');
+    console.log(bindById);
+    console.log(bindByClass);
+
+    const changeStyle = $('#change-style');
+    const changeStyle2 = $('.change-style');
+    changeStyle.css('color', 'red');
+    changeStyle2.css('color', 'blue');
+    
+    const getIdAttr = $("#get-id-attr");
+    const id = getIdAttr.attr('id');
+    console.log(id);
+
+    const setClassAttr = $("#set-class-attr");
+    console.log(setClassAttr);
+    setClassAttr.attr('class', 'class-0');
+
 }
 
 $(init);

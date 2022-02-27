@@ -3,8 +3,10 @@ const PostSummaryItem = (post) => {
     <li class="list-group-item">
         <div class="row">
             <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-9">
+            
                 <p>
-                    <span class="fg-color-gray">${post.topic}</span></br>
+                    ${post.topic ? `<span class="fg-color-gray">${post.topic}</span></br>` : ""}
+                   
                     <span class="fg-style-bold fg-white ">${post.userName} <i class="fa fa-check-circle"></span></i></span>
                     <span class="fg-color-gray"> - ${post.time}</span></br>
                     <span class="fg-style-bold fg-white">${post.title}</span>

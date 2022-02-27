@@ -1,7 +1,7 @@
 const NavigationSidebar = () => {
     return(`
     <ul class="list-group list-group-navigation">
-        <li class="list-group-item">
+        <li class="list-group-item mt-2">
             <i class="fab fa-twitter fa-1x" ></i>
         </li>
 
@@ -87,7 +87,7 @@ const NavigationSidebar = () => {
                 <div class="col-1">
                     <span class="fa-stack fa-1x" >
                         <i class="fa fa-circle fa-stack-1x"></i>
-                        <i class="fas fa-ellipsis-h fa-stack-1x"></i>
+                        <i class="fas fa-ellipsis-h fa-stack-1x" style="color:black;"></i>
                     </span>    
                 </div>
 

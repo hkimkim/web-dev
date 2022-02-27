@@ -104,6 +104,24 @@
     border-bottom: 5px solid rgba(0, 132, 255, 0.87);
 }
 
-.post-picture {
+.card-picture {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom: solid rgba(211, 211, 211, 0.219) 1px;
+}
+
+.post-card {
     border-radius: 18px;
+    background-color: transparent;
+    border: solid rgba(211, 211, 211, 0.219) 1px;
+}
+
+.post-item-background {
+    border: none;
+    background-color: transparent;
+    border-bottom: solid rgba(211, 211, 211, 0.219) 1px;
+}
+
+.post-picture {
+    border-radius: 12px;
 }

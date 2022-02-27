@@ -1,31 +1,40 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
     return(`
     <ul class="list-group list-group-navigation">
         <li class="list-group-item mt-2">
             <i class="fab fa-twitter fa-1x" ></i>
         </li>
 
-        <li class="list-group-item">
-            <div class="row">
-                <div class="col-1">
-                    <i class="fa fa-home"></i>
-                </div>
-                <div class="col-xxl-10 col-xl-10 d-xl-block d-lg-none d-md-none d-sm-none">
-                    Home
-                </div>
-            </div>
-        </li>
+        <a href="../HomeScreen/home.html" style="text-decoration:none">
 
-        <li class="list-group-item active">
-            <div class="row">
-                <div class="col-1">
-                    <i class="fa fa-hashtag" style="color: rgb(255, 255, 255)"></i>
+            ${active === 'home'? `<li class="list-group-item active">` : `<li class="list-group-item">`}
+            
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa fa-home"></i>
+                    </div>
+                    <div class="col-xxl-10 col-xl-10 d-xl-block d-lg-none d-md-none d-sm-none">
+                        Home
+                    </div>
                 </div>
-                <div class="fg-white fg-style-bold col-xxl-10 col-xl-10 d-xl-block d-lg-none d-md-none d-sm-none">
-                    Explore
+            </li>
+        </a>
+
+
+        <a href="../ExploreScreen/explore.html" style="text-decoration:none">
+
+            ${active === 'explore'? `<li class="list-group-item active">` : `<li class="list-group-item">`}
+                <div class="row">
+                        <div class="col-1">
+                            <i class="fa fa-hashtag" style="color: rgb(255, 255, 255)"></i>
+                        </div>
+                        <div class="fg-white fg-style-bold col-xxl-10 col-xl-10 d-xl-block d-lg-none d-md-none d-sm-none">
+                            Explore
+                        </div>
                 </div>
-            </div>
-        </li>
+            </li>
+        </a>
+
 
         <li class="list-group-item">
             <div class="row">

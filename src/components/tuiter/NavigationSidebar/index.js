@@ -13,7 +13,7 @@ const NavigationSidebar = (
                     <i className="fab fa-twitter fa-1x"></i>
                 </li>
 
-                <a href="../HomeScreen/home.html" style={{"text-decoration" : "none"}}>
+                <a href="../HomeScreen/home.html" style={{"textDecoration" : "none"}}>
 
                     <li className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
                         <div className="row">
@@ -28,7 +28,7 @@ const NavigationSidebar = (
                 </a>
 
 
-                <a href="../ExploreScreen/explore.html" style={{"text-decoration":"none"}}>
+                <a href="../ExploreScreen/explore.html" style={{"textDecoration":"none"}}>
 
                 <li className={`list-group-item ${active === 'explore' ? 'active' : ''}`}>
                     <div className="row">
@@ -70,7 +70,7 @@ const NavigationSidebar = (
                     <div className="col-1">
                         <i className="fa fa-bookmark"></i>
                     </div>
-                    <div class="col-xxl-10 col-xl-10 d-xl-block d-lg-none d-md-none d-sm-none">
+                    <div className="col-xxl-10 col-xl-10 d-xl-block d-lg-none d-md-none d-sm-none">
                         Bookmarks
                     </div>
                 </div>

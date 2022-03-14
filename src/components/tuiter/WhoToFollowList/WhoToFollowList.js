@@ -15,7 +15,6 @@ const WhoToFollowList = () => {
                         );
                     })
                 }
-                <li/>
             </ul>
         </>);
         

@@ -20,7 +20,6 @@ const Tuiter = (who) => {
       </>
   )
 }
-
 export default Tuiter
 
 // <div class="row mt-2">

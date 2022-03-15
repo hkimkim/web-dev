@@ -11,7 +11,7 @@ const PostSummaryItem = (
         <>
             <li className="list-group-item">
                 <div className="row">
-                    <div classNameName="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                    <div className="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-9">
 
                         <p>
                             {post.topic ? <span className="fg-color-gray">{post.topic}<br></br></span>: ""}
@@ -21,12 +21,11 @@ const PostSummaryItem = (
                             <span className="fg-style-bold fg-white">{post.title}</span>
                         </p>
 
-                </div>
+                    </div>
 
-                <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
-                    <img src={post.image} alt="" className="img-fluid post-picture"/>
-                </div>
-
+                    <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                        <img src={post.image} alt="" className="img-fluid post-picture"/>
+                    </div>
                 </div>
             </li> 
 

@@ -5,7 +5,7 @@ import posts from "./posts.json";
 const PostSummaryList = () => {
     return (
         <>
-        <ul class="list-group list-group-content">
+        <ul className="list-group list-group-content">
             {
                 posts.map( post => { 
                     return (

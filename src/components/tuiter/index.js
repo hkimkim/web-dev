@@ -5,7 +5,6 @@ import ExploreScreen from './ExploreScreen/ExploreScreen'
 const Tuiter = (who) => {
   return (
       <>
-
         <ExploreScreen/>
         <h1>Tuiter</h1>
         <Link to="/hello">

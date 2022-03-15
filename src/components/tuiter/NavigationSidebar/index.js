@@ -1,21 +1,19 @@
 import React from "react";
-
+import {Link} from 'react-router-dom';
 
 const NavigationSidebar = (
     {
         active = 'explore'
     }
-) => {
+    ) => {
     return(
         <>
             <ul className="list-group list-group-navigation">
-                <li className="list-group-item mt-2">
+                <Link to="/" className="list-group-item mt-2" style={{ textDecoration : 'none'}}>
                     <i className="fab fa-twitter fa-1x"></i>
-                </li>
+                </Link>
 
-                <a href="../HomeScreen/home.html" style={{"textDecoration" : "none"}}>
-
-                    <li className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
+                <Link to="/tuiter/home" style={{textDecoration : "none"}} className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
                         <div className="row">
                             <div className="col-1">
                                 <i className="fa fa-home"></i>
@@ -24,23 +22,19 @@ const NavigationSidebar = (
                                 Home
                             </div>
                         </div>
-                    </li>
-                </a>
+                </Link>
 
 
-                <a href="../ExploreScreen/explore.html" style={{"textDecoration":"none"}}>
-
-                <li className={`list-group-item ${active === 'explore' ? 'active' : ''}`}>
+                <Link to="/tuiter/explore" style={{textDecoration :"none"}} className={`list-group-item ${active === 'explore' ? 'active' : ''}`}>
                     <div className="row">
                         <div className="col-1">
                             <i className="fa fa-hashtag" style={{"color" : "rgb(255, 255, 255)"}}></i>
                         </div>
-                        <div className="fg-white fg-style-bold col-xxl-10 col-xl-10 d-xl-block d-lg-none d-md-none d-sm-none">
+                        <div className="fg-white col-xxl-10 col-xl-10 d-xl-block d-lg-none d-md-none d-sm-none">
                             Explore
                         </div>
                     </div>
-                </li>
-            </a>
+                </Link>
 
 
             <li className="list-group-item">

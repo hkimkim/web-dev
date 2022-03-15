@@ -5,7 +5,7 @@ const PostItem = (
             "author": "Elon Musk",
             "handle": "elonmusk",
             "time": "23h",
-            "tuit": "Amazing show about <a href='https://twitter.com/inspiration4x' style='text-decoration:none'>@Inspiration4x</a> mission!",
+            "tuit": 'Amazing show about <a href="https://twitter.com/inspiration4x" style="ext-decoration:none">@Inspiration4x</a> mission!',
             "postImg": "https://occ-0-1723-1722.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABSTVj5DHrlahOykYCHrcwL63gTkGzcXodPQgvrJXFqQMFg4Ktgtxmh_fGFJbsMF9BwmIbdW4L17YdJejrxJNwqyEnAP-.jpg?r=3d5",
             "title": "Countdown: Inspiration4 Mission to Space | Netflix Offical Site",
             "summary": "From traing to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space...\n netflix.com",
@@ -25,10 +25,10 @@ const PostItem = (
             <div className="fg-white col-xxl-10 col-xl-9 col-lg-10 col-md-10 col-sm-10 mt-1 px-1">
                 <p>
                     <span className="fg-style-bold">{post.author} <i className="fa fa-check-circle"></i></span>
-                    <span className="fg-color-gray">@{post.handle}</span>  
+                    <span className="fg-color-gray"> @{post.handle}</span>  
                     <span className="fg-color-gray"> - {post.time}</span>
                     <br></br>
-                    {post.tuit}
+                    <div dangerouslySetInnerHTML={{ __html: post.tuit}} />
                 </p>   
 
                 <div className="card post-card mt-2">
@@ -38,7 +38,7 @@ const PostItem = (
                     {post.title && post.summary ?                      
                         <div className="card-body">
                             {post.title ? <h6 className="card-title">{post.title}</h6>: ""}
-                            {post.summary ? <p className="card-text fg-color-gray">{post.summary}</p>: ""}
+                            {post.summary ? <p className="card-text fg-color-gray"><div dangerouslySetInnerHTML={{ __html: post.summary}}/></p>: ""}
                         </div> 
                         
                         : ""

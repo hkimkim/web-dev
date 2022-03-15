@@ -10,15 +10,15 @@ const NavigationSidebar = (
         <>
             <ul className="list-group list-group-navigation">
                 <Link to="/" className="list-group-item mt-2" style={{ textDecoration : 'none'}}>
-                    <i className="fab fa-twitter fa-1x"></i>
+                    <i className="fg-white fab fa-twitter fa-1x"></i>
                 </Link>
 
                 <Link to="/tuiter/home" style={{textDecoration : "none"}} className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
                         <div className="row">
                             <div className="col-1">
-                                <i className="fa fa-home"></i>
+                                <i className="fg-white fa fa-home"></i>
                             </div>
-                            <div className="col-xxl-10 col-xl-10 d-xl-block d-lg-none d-md-none d-sm-none">
+                            <div className="fg-white col-xxl-10 col-xl-10 d-xl-block d-lg-none d-md-none d-sm-none">
                                 Home
                             </div>
                         </div>

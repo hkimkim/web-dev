@@ -16,11 +16,8 @@ const WhoToFollowList = () => {
                     })
                 }
             </ul>
-        </>);
+        </>
+        );
         
 } 
 export default WhoToFollowList;
-
-                    // who.map(who => {
-                    //     return(WhoToFollowListItem());
-                    // }).join('')

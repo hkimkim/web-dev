@@ -27,7 +27,7 @@ function App() {
                    element={<ExploreScreen/>}/>
             {/* <Route path="notifications" 
                    element={<NotificationScreen/>}/> */}
-            ...
+
           </Route>
         </Route>
       </Routes>

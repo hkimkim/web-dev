@@ -3,17 +3,17 @@ import {Link} from 'react-router-dom';
 
 const NavigationSidebar = (
     {
-        active = 'explore'
+        active = 'home'
     }
     ) => {
     return(
         <>
             <ul className="list-group list-group-navigation">
-                <Link to="/" className="list-group-item mt-2" style={{ textDecoration : 'none'}}>
+                <Link to="/labs" className="list-group-item mt-2" style={{ textDecoration : 'none'}}>
                     <i className="fg-white fab fa-twitter fa-1x"></i>
                 </Link>
 
-                <Link to="/tuiter/home" style={{textDecoration : "none"}} className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
+                <Link to="/tuiter/" style={{textDecoration : "none"}} className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
                         <div className="row">
                             <div className="col-1">
                                 <i className="fg-white fa fa-home"></i>

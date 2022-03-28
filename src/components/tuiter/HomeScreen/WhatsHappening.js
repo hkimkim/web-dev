@@ -18,10 +18,10 @@ const WhatsHappening = () => {
             
             <div className="row mt-2 mb-2">
               <div className='col-10' style={{color:"#5bc0de"}}>
-                <i className="fa fa-image m-1"></i>
-                <i className="fa fa-chart-area m-1"></i>
-                <i className="fa fa-smile m-1"></i>
-                <i className="fa fa-calendar m-1"></i>
+                <i className="fa fa-image m-2"></i>
+                <i className="fa fa-chart-area m-2"></i>
+                <i className="fa fa-smile m-2"></i>
+                <i className="fa fa-calendar m-2"></i>
               </div>
               <div className="col-2 float-right pb-2">
                 <button className="btn btn-primary btn-block rounded-pill" onClick={tuitClickHandler}> Tweet </button>

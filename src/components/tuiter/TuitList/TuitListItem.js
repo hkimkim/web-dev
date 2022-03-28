@@ -1,3 +1,4 @@
+import { useDispatch } from "react-redux";
 
 const TuitListItem = ({
     tuit = {
@@ -24,6 +25,10 @@ const TuitListItem = ({
         }
     }
     }) => {
+        const dispatch = useDispatch();
+        const deleteTuit = (tuit) => {
+            dispatch({type: 'delete-tuit', tuit})
+        };
     return (
         <>
             <li className="list-group-item post-item-background">
@@ -32,7 +37,7 @@ const TuitListItem = ({
                     <img src={tuit.logo_image} alt="" className="img-fluid profile-pic"/>
                 </div>
 
-                <div className="fg-white col-xxl-10 col-xl-9 col-lg-10 col-md-10 col-sm-10 mt-1">
+                <div className="fg-white col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-9 mt-1">
                     <p>
                         <span className="fg-style-bold">{tuit.postedBy.username} <i className="fa fa-check-circle"></i></span>
                         <span className="fg-color-gray"> @{tuit.handle}</span>  
@@ -75,6 +80,10 @@ const TuitListItem = ({
                     </div>
 
                 </div>
+                <div className="fg-white col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1 mt-1">
+                    <i onClick= {() => deleteTuit(tuit)} className="fa fa-times" style={{"fontSize":"16px;color:lightgray"}}></i>
+                </div>
+
             </div>
 
             </li>

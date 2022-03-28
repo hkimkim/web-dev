@@ -1,4 +1,5 @@
 import { useDispatch } from "react-redux";
+import TuitStats from "./TuitStats";
 
 const TuitListItem = ({
     tuit = {
@@ -22,7 +23,7 @@ const TuitListItem = ({
           comments: 123,
           retuits: 234,
           likes: 345
-        }
+        },
     }
     }) => {
         const dispatch = useDispatch();
@@ -57,31 +58,12 @@ const TuitListItem = ({
                     : ""}
 
                     <div className="row mt-3 mb-2">
-
-                        <div className="col-3">
-                            <i className="far fa-comment mx-2" style={{"fontSize":"16px;color:lightgray"}}></i>
-                            <span>{tuit.stats.comments}</span>
-                        </div>
-
-                        <div className="col-3">
-                            <i className="fa fa-retweet mx-2" style={{"fontSize":"16px;color:lightgray"}}></i>
-                            <span>{tuit.stats.retuits}</span>
-                        </div>
-
-                        <div className="col-3">
-                            <i className="fa fa-heart mx-2" style={{"fontSize":"16px;color:red"}}></i>
-                            <span>{tuit.stats.likes}</span>
-                        </div>
-
-                        <div className="col-3">
-                            <i className="fa fa-share-alt mx-2" style={{"fontSize":"16px;color:lightgray"}}></i>
-                        </div>
-
+                        <TuitStats tuit={tuit}/>
                     </div>
 
                 </div>
                 <div className="fg-white col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1 mt-1">
-                    <i onClick= {() => deleteTuit(tuit)} className="fa fa-times" style={{"fontSize":"16px;color:lightgray"}}></i>
+                    <i onClick= {() => deleteTuit(tuit)} className="fa fa-times" style={{"cursor": "pointer", "fontSize":"16px;color:lightgray"}}></i>
                 </div>
 
             </div>

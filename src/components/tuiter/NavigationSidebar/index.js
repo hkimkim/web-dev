@@ -81,8 +81,8 @@ const NavigationSidebar = (
                 </div>
             </li>
 
-            <li className="list-group-item ">
-                <div className="row">
+            <Link to="/tuiter/profile" style={{textDecoration :"none"}} className={`list-group-item ${active === 'profile' ? 'active' : ''}`}>
+                 <div className="row">
                     <div className="col-1">
                         <i className="fa fa-user"></i>
                     </div>
@@ -90,7 +90,8 @@ const NavigationSidebar = (
                         Profile
                     </div>
                 </div>
-            </li>
+            </Link>
+
 
             <li className="list-group-item">
                 <div className="row">

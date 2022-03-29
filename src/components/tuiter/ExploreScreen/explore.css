@@ -125,3 +125,17 @@
 .post-picture {
     border-radius: 12px;
 }
+
+.twitter-profile-img {
+    margin-top: 10px;
+    position: absolute;
+    left: 20px;
+    top: 70%;
+    width: 20%;
+    border-radius: 100%;
+    border: solid black 4px;
+}
+
+.bioSection{
+    margin-top: 4rem;
+}

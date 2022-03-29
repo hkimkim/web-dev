@@ -6,6 +6,7 @@ import Labs from './components/labs';
 import Tuiter from './components/tuiter';
 import HomeScreen from './components/tuiter/HomeScreen/HomeScreen';
 import ExploreScreen from './components/tuiter/ExploreScreen/ExploreScreen';
+import ProfileScreen from './components/tuiter/ProfileScreen/ProfileScreen';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 
@@ -25,9 +26,8 @@ function App() {
                    element={<HomeScreen/>}/>
             <Route path="explore"
                    element={<ExploreScreen/>}/>
-            {/* <Route path="notifications" 
-                   element={<NotificationScreen/>}/> */}
-
+            <Route path="profile" 
+                   element={<ProfileScreen/>}/>
           </Route>
         </Route>
       </Routes>
@@ -35,5 +35,4 @@ function App() {
   </BrowserRouter>
   );
 }
-
 export default App;

@@ -1,11 +1,13 @@
 import React from "react";
 import {Link} from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 
 const NavigationSidebar = (
     {
         active = 'home'
     }
     ) => {
+        const path = useLocation().pathname;
     return(
         <>
             <ul className="list-group list-group-navigation">
@@ -13,7 +15,7 @@ const NavigationSidebar = (
                     <i className="fg-white fab fa-twitter fa-1x"></i>
                 </Link>
 
-                <Link to="/tuiter/" style={{textDecoration : "none"}} className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
+                <Link to="/tuiter/" style={{textDecoration : "none"}} className={`list-group-item ${path.endsWith('tuiter/')? 'active' : ''}`}>
                         <div className="row">
                             <div className="col-1">
                                 <i className="fg-white fa fa-home"></i>
@@ -25,7 +27,7 @@ const NavigationSidebar = (
                 </Link>
 
 
-                <Link to="/tuiter/explore" style={{textDecoration :"none"}} className={`list-group-item ${active === 'explore' ? 'active' : ''}`}>
+                <Link to="/tuiter/explore" style={{textDecoration :"none"}} className={`list-group-item ${path.includes('explore') ? 'active' : ''}`}>
                     <div className="row">
                         <div className="col-1">
                             <i className="fa fa-hashtag" style={{"color" : "rgb(255, 255, 255)"}}></i>
@@ -81,12 +83,12 @@ const NavigationSidebar = (
                 </div>
             </li>
 
-            <Link to="/tuiter/profile" style={{textDecoration :"none"}} className={`list-group-item ${active === 'profile' ? 'active' : ''}`}>
+            <Link to="/tuiter/profile" style={{textDecoration :"none"}} className={`list-group-item ${path.includes('profile') ? 'active' : ''}`}>
                  <div className="row">
                     <div className="col-1">
-                        <i className="fa fa-user"></i>
+                        <i className="fa fa-user" style={{"color" : "rgb(255, 255, 255)"}}></i>
                     </div>
-                    <div className="col-xxl-10 col-xl-10 d-xl-block d-lg-none d-md-none d-sm-none">
+                    <div className="fg-white col-xxl-10 col-xl-10 d-xl-block d-lg-none d-md-none d-sm-none">
                         Profile
                     </div>
                 </div>

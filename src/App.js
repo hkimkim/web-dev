@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
     <div className="container">
       <Routes>
-        <Route path="/home">
+        <Route path="/">
           <Route path="labs"
                  element={<Labs/>}/>
           <Route path="hello"

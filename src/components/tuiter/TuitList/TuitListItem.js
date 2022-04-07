@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import TuitStats from "./TuitStats";
+import { deleteTuit } from "../actions/tuits-actions";
 
 const TuitListItem = ({
     tuit = {
@@ -27,9 +28,9 @@ const TuitListItem = ({
     }
     }) => {
         const dispatch = useDispatch();
-        const deleteTuit = (tuit) => {
-            dispatch({type: 'delete-tuit', tuit})
-        };
+        // const deleteTuit = (tuit) => {
+        //     dispatch({type: 'delete-tuit', tuit})
+        // };
     return (
         <>
             <li className="list-group-item post-item-background">
@@ -63,7 +64,7 @@ const TuitListItem = ({
 
                 </div>
                 <div className="fg-white col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1 mt-1">
-                    <i onClick= {() => deleteTuit(tuit)} className="fa fa-times" style={{"cursor": "pointer", "fontSize":"16px;color:lightgray"}}></i>
+                    <i onClick= {() => deleteTuit(dispatch,tuit)} className="fa fa-times" style={{"cursor": "pointer", "fontSize":"16px;color:lightgray"}}></i>
                 </div>
 
             </div>

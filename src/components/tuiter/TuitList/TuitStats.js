@@ -22,10 +22,10 @@ const TuitStats = ({tuit}) => {
             <div>
                 <i onClick={() => updateTuit(dispatch, {
                     ...tuit,
-                    likes: tuit.stats.likes + 1
+                    likes: tuit.likes + 1
                     })} className="far fa-thumbs-up mx-2">
                 </i>
-                <span>{tuit.stats.likes}</span>
+                <span>{tuit.likes}</span>
             </div>
 
                 {/* <i className="fa fa-heart mx-2" style={{"fontSize":"16px;color:red"}}></i> */}

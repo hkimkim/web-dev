@@ -23,6 +23,7 @@ const tuitsReducer = (state = [], action) => {
         postedBy: {
           username: "ReactJS"
         },
+        likes: 0,
         handle: "ReactJS",
         stats: {
           retuits: 111,

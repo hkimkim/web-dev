@@ -10,22 +10,30 @@ const TuitStats = ({tuit}) => {
         <>
             <div className="col-3">
                 <i className="far fa-comment mx-2" style={{"fontSize":"16px;color:lightgray"}}></i>
-                <span>{tuit.stats.comments}</span>
+                <span>{tuit.comments}</span>
             </div>
 
             <div className="col-3">
                 <i className="fa fa-retweet mx-2" style={{"fontSize":"16px;color:lightgray"}}></i>
-                <span>{tuit.stats.retuits}</span>
+                <span>{tuit.retuits}</span>
             </div>
 
             <div className="col-3">
             <div>
-                <i onClick={() => updateTuit(dispatch, {
+                <span  onClick={() => updateTuit(dispatch, {
                     ...tuit,
-                    likes: tuit.likes + 1
-                    })} className="far fa-thumbs-up mx-2">
-                </i>
-                <span>{tuit.likes}</span>
+                    likes: tuit.likes + 1,
+                    liked: true
+                    })} > 
+                    {
+                        tuit.liked && <i className="fa fa-thumbs-up mx-2" style={({color: 'white'})}> </i>                
+                    }
+                    {
+                        !tuit.liked && <i className="far fa-thumbs-up mx-2"> </i>                
+                    }
+                    <span>{tuit.likes}</span>
+                </span>
+
             </div>
 
                 {/* <i className="fa fa-heart mx-2" style={{"fontSize":"16px;color:red"}}></i> */}

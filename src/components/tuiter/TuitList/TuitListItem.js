@@ -9,7 +9,7 @@ const TuitListItem = ({
         postedBy: {
           username: "ReactJS"
         },
-        liked: true,
+        liked: false,
         verified: false,
         handle: "ReactJS",
         time: "2h",
@@ -42,7 +42,7 @@ const TuitListItem = ({
                 <div className="fg-white col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-9 mt-1">
                     <p>
                         <span className="fg-style-bold">{tuit.postedBy.username} <i className="fa fa-check-circle"></i></span>
-                        <span className="fg-color-gray"> @{tuit.handle}</span>  
+                        <span className="fg-color-gray"> @{tuit.postedBy.username}</span>  
                         {/* <span className="fg-color-gray"> - {tuit.time}</span> */}
                         <br></br>
                         {tuit.tuit}

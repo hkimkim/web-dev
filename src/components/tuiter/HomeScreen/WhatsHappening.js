@@ -4,7 +4,7 @@ import { createTuit } from '../actions/tuits-actions';
 
 const WhatsHappening = () => {
   // let [whatsHappening, setWhatsHappening] = useState('');
-  const [newTuit, setNewTuit] = useState({tuit: 'New tuit', postedBy:{username:"NASA"}, stats: {comments: 0},  likes: 0});
+  const [newTuit, setNewTuit] = useState({tuit: 'New tuit', postedBy:{username:"i_am_choonsik"}, stats: {comments: 0},  likes: 0});
   const dispatch = useDispatch();
   // const tuitClickHandler = () => {
   //     // dispatch({type: 'create-tuit', tuit: whatsHappening});

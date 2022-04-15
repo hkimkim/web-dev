@@ -1,5 +1,5 @@
 // import tuits from "../data/tuits.json"
-import { DELETE_TUIT, FIND_ALL_TUITS, UPDATE_TUIT } from "../actions/tuits-actions";
+import { CREATE_TUIT, DELETE_TUIT, FIND_ALL_TUITS, UPDATE_TUIT } from "../actions/tuits-actions";
 
 const tuitsReducer = (state = [], action) => {
   switch (action.type) {
@@ -15,6 +15,12 @@ const tuitsReducer = (state = [], action) => {
       return state.map(
         tuit => tuit._id === action.tuit._id ? action.tuit : tuit
       );
+
+    case CREATE_TUIT:
+        return [
+          ...state,
+          action.newTuit
+        ];
 
     case 'create-tuit':
       const newTuit = {

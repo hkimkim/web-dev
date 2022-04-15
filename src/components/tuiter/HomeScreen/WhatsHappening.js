@@ -3,9 +3,8 @@ import {useDispatch} from "react-redux"
 import { createTuit } from '../actions/tuits-actions';
 
 const WhatsHappening = () => {
-  let [whatsHappening, setWhatsHappening] = useState('');
-  const [newTuit, setNewTuit] =
-      useState({tuit: 'New tuit'});
+  // let [whatsHappening, setWhatsHappening] = useState('');
+  const [newTuit, setNewTuit] = useState({tuit: 'New tuit'});
   const dispatch = useDispatch();
   // const tuitClickHandler = () => {
   //     // dispatch({type: 'create-tuit', tuit: whatsHappening});
@@ -17,7 +16,9 @@ const WhatsHappening = () => {
             <img src="https://pbs.twimg.com/media/E9s0Z08UYAIxtI7?format=jpg" alt="" className="img-fluid profile-pic"/>
         </div>
         <div className="fg-white col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 mt-1">
-            <textarea className="p-2 fg-white" style={{background:"transparent", width:"100%", height:"50%", border:"solid rgba(211, 211, 211, 0.219) 1px"}} placeholder="What's happening?" value={whatsHappening} onChange={(event) => setNewTuit({...newTuit, tuit: event.target.value})}>
+          <textarea className="p-2 fg-white" style={{background:"transparent", width:"100%", height:"50%", border:"solid rgba(211, 211, 211, 0.219) 1px"}} placeholder="What's happening?" onChange={(event) => setNewTuit({...newTuit, tuit: event.target.value})}>
+
+            {/* <textarea className="p-2 fg-white" style={{background:"transparent", width:"100%", height:"50%", border:"solid rgba(211, 211, 211, 0.219) 1px"}} placeholder="What's happening?" value={whatsHappening} onChange={(event) => setNewTuit({...newTuit, tuit: event.target.value})}> */}
             </textarea>
             
             <div className="row mt-2 mb-2">

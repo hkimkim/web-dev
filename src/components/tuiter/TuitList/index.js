@@ -1,12 +1,11 @@
 import React, {useEffect} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import TuitListItem from "./TuitListItem"
-import * as service from "../../services/tuits-service"
 import { findAllTuits } from '../actions/tuits-actions'
 
 const TuitList = () => {
     const tuits = useSelector(state => state.tuits);
-    const dispatch = useDispatch(); 
+    const dispatch = useDispatch();
     useEffect(() => findAllTuits(dispatch), []);
     return (
     <ul className="list-group mx-2">

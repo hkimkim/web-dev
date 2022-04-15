@@ -4,7 +4,11 @@ const API_BASE = process.env.REACT_APP_API_BASE;
 const TUITS_API = `${API_BASE}/tuits`
 
 
-export const createTuit = async (tuit) => {}
+export const createTuit = async (tuit) => {
+    const response = await axios.post(TUITS_API, tuit)
+    return response.data;
+}
+
 export const findAllTuits = async () => {
     const response = await axios.get(TUITS_API);
     const tuits = response.data;

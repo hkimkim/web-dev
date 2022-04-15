@@ -28,9 +28,6 @@ const TuitListItem = ({
     }
     }) => {
         const dispatch = useDispatch();
-        // const deleteTuit = (tuit) => {
-        //     dispatch({type: 'delete-tuit', tuit})
-        // };
     return (
         <>
             <li className="list-group-item post-item-background">
@@ -43,7 +40,6 @@ const TuitListItem = ({
                     <p>
                         <span className="fg-style-bold">{tuit.postedBy.username} <i className="fa fa-check-circle"></i></span>
                         <span className="fg-color-gray"> @{tuit.postedBy['username']}</span>  
-                        {/* <span className="fg-color-gray"> - {tuit.time}</span> */}
                         <br></br>
                         {tuit.tuit}
                     </p>   
